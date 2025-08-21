@@ -19,12 +19,18 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/SyedLayeeqh-Protfolio-2025">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/case-study/MindMate" element={<CaseStudyMindMate />} />
-          <Route path="/case-study/Experience" element={<CaseStudyExperience />} />
-          <Route path="/case-study/BitWallet" element={<CaseStudyBitWallet />} />
+          <Route
+            path="/case-study/Experience"
+            element={<CaseStudyExperience />}
+          />
+          <Route
+            path="/case-study/BitWallet"
+            element={<CaseStudyBitWallet />}
+          />
           <Route path="/case-study/Elevate" element={<CaseStudyElevate />} />
           <Route path="/case-study/DLS" element={<CaseStudyDLS />} />
           <Route path="/case-study/Leeds" element={<CaseStudyLeeds />} />
