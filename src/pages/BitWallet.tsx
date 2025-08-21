@@ -24,6 +24,7 @@ import image19 from '@/assets/Bit-Wallet/Bit-Wallet-Preference.jpg';
 import image20 from '@/assets/Bit-Wallet/Bit-Wallet-OtherScreens.jpg';
 
 
+
 const CaseStudyBitWallet = () => {
   const navigate = useNavigate();
 
