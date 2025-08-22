@@ -1,8 +1,5 @@
 import { useState } from 'react';
 import { Send, Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 
 const Contact = () => {
@@ -69,87 +66,18 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          {/* Contact Form */}
-          <div className="glass-card p-8 animate-slide-up">
-            <h3 className="text-2xl font-semibold mb-6">Send me a message</h3>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-4">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2">
-                    Name
-                  </label>
-                  <Input
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="bg-muted/50"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2">
-                    Email
-                  </label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="bg-muted/50"
-                  />
-                </div>
-              </div>
-              
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium mb-2">
-                  Subject
-                </label>
-                <Input
-                  id="subject"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  required
-                  className="bg-muted/50"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2">
-                  Message
-                </label>
-                <Textarea
-                  id="message"
-                  name="message"
-                  rows={5}
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  className="bg-muted/50"
-                />
-              </div>
-              
-              <Button type="submit" size="lg" className="w-full bg-primary hover:bg-primary-dark">
-                <Send className="h-4 w-4 mr-2" />
-                Send Message
-              </Button>
-            </form>
-          </div>
+        <div className="grid lg:grid-cols-1 gap-12 max-w-4xl mx-auto">
 
           {/* Contact Info */}
           <div className="space-y-8 animate-scale-in">
             <div className="glass-card p-8">
-              <h3 className="text-2xl font-semibold mb-6">Let's connect</h3>
+              <h3 className="text-2xl font-semibold mb-4">Let's connect</h3>
               <p className="text-muted-foreground mb-8 leading-relaxed">
                 I'm always open to discussing new opportunities, creative ideas, 
                 or potential collaborations. Feel free to reach out!
               </p>
               
-              <div className="space-y-4">
+              <div className=" grid lg:grid-cols-3 gap-12 max-w-4xl mx-auto">
                 {contactInfo.map((info, index) => (
                   <a
                     key={index}

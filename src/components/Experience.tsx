@@ -29,7 +29,7 @@ const Experience = () => {
     {
       title: "Graphic Designer",
       company: "ReDIM Information System",
-      location: "Los Angeles, CA",
+      location: "Chennai, India",
       period: "2018 - 2019",
       description: "Started my career focusing on visual design, User Interface and brand identity. Learned fundamental design principles and client communication skills.",
       achievements: [
