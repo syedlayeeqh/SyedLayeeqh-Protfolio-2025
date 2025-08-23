@@ -37,7 +37,7 @@ const Hero = () => {
             >
               View My Work
             </Button>
-            <a href="/SyedLayeeqh-Protfolio-2025/Syed_Layeeqh_Resume.pdf"
+            <a href="/Syed_Layeeqh_Resume.pdf"
             download="Syed_Layeeqh_Resume.pdf"
               className="border-glass-border hover:bg-transparent hover:text-dark flex items-center justify-center gap-2 inline-flex rounded-md border border-input bg-background px-4 py-3 text-sm font-medium text-muted-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
             >
